@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "channel": "stable",
+  "publishedAt": "2026-11-11T10:10:07Z",
+  "releaseSeq": 0,
+  "tag": "fw-v0.0.0",
+  "notes": "",
+  "app": null,
+  "ui": null,
+  "policy": {
+    "allowDowngrade": false,
+    "minAppVersion": "",
+    "uiOptional": true,
+    "minFwForUi": ""
+  },
+  "sig": {
+    "alg": "ed25519",
+    "kid": "fw-2026a"
+  }
+}
