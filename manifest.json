@@ -1,17 +1,33 @@
 {
   "schema": 1,
-  "channel": "stable",
-  "publishedAt": "2026-11-11T10:10:07Z",
-  "releaseSeq": 0,
-  "tag": "fw-v0.0.0",
-  "notes": "",
-  "app": null,
-  "ui": null,
+  "channel": "internal",
+  "publishedAt": "2026-11-11T10:45:13Z",
+  "releaseSeq": 1,
+  "tag": "fw-v0.12.0",
+  "notes": "Internal validation of the online OTA channel: signed manifest + HBFW packages.",
+  "app": {
+    "version": "0.12.0",
+    "imageId": "0x2793",
+    "rawSize": 1184876,
+    "sha256": "85d48ec30c47b462e9358f7368d6e757b6dbf449d2cd0202a1d7888ed4c5aeb6",
+    "pkgFile": "app-bank0-0.12.0.hbfw",
+    "pkgSize": 585016,
+    "pkgSha256": "d688343c10b2ba61f49a944d8f044beb09d0307908bb4eca1d1de2463f6bcd94"
+  },
+  "ui": {
+    "uiBuildId": 2026111101,
+    "wtocVersion": 1,
+    "rawSize": 9878432,
+    "sha256": "e4989187e0d756279bb85be0be34e81d2d3ceae83ef07615b77595ea05fe2eb7",
+    "pkgFile": "watch-ui-nor-2026111101.hbfw",
+    "pkgSize": 1576780,
+    "pkgSha256": "ca301bfb549f98ba2126b1bc98d10c3ac06146aa67fc9dc87b1d1bcf143e0311"
+  },
   "policy": {
     "allowDowngrade": false,
-    "minAppVersion": "",
+    "minAppVersion": "0.8.22",
     "uiOptional": true,
-    "minFwForUi": ""
+    "minFwForUi": "0.11.0"
   },
   "sig": {
     "alg": "ed25519",
