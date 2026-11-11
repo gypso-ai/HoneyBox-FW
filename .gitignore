@@ -1,0 +1,13 @@
+# Local scratch / editor noise.
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Release packages belong to GitHub Releases, never to the git tree: they are
+# 0.6-1.5 MB binaries and would bloat every clone.
+*.hbfw
+*.bin
+
+# Staging output of `publish-firmware.ps1 -Out`.
+/out/
