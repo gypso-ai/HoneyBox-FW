@@ -1,17 +1,25 @@
 {
   "schema": 1,
   "channel": "stable",
-  "publishedAt": "2026-11-11T10:10:07Z",
-  "releaseSeq": 0,
-  "tag": "fw-v0.0.0",
-  "notes": "",
+  "publishedAt": "2026-11-11T11:07:36Z",
+  "releaseSeq": 2,
+  "tag": "fw-v0.12.0",
+  "notes": "Stable resource refresh: UI bundle 9.88 MB -> 1.54 MB (xz+HBFW). App image unchanged.",
   "app": null,
-  "ui": null,
+  "ui": {
+    "uiBuildId": 2026111101,
+    "wtocVersion": 1,
+    "rawSize": 9939296,
+    "sha256": "b8fc38c4247290d11682220a3f70243bb1b1aac2d5c63b31c2ed5af716227cee",
+    "pkgFile": "watch-ui-nor-2026111101.hbfw",
+    "pkgSize": 1618332,
+    "pkgSha256": "288a38c06b571ce5043572130d4d242ebf0f94cf6bf5f7c5557b52b794e898a4"
+  },
   "policy": {
     "allowDowngrade": false,
-    "minAppVersion": "",
+    "minAppVersion": "0.8.22",
     "uiOptional": true,
-    "minFwForUi": ""
+    "minFwForUi": "0.11.0"
   },
   "sig": {
     "alg": "ed25519",
