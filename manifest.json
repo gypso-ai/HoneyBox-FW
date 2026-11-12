@@ -1,20 +1,20 @@
 {
   "schema": 1,
   "channel": "stable",
-  "publishedAt": "2026-11-12T09:05:29Z",
-  "releaseSeq": 6,
+  "publishedAt": "2026-11-12T09:46:28Z",
+  "releaseSeq": 7,
   "tag": "fw-v0.12.2",
-  "notes": "0.12.2 (channel test bump): byte-identical firmware to 0.12.1 apart from the version string, published so a watch already on 0.12.1 can exercise the online upgrade path.",
-  "app": {
-    "version": "0.12.2",
-    "imageId": "0x2793",
-    "rawSize": 1001376,
-    "sha256": "18109787d954a758f11bed990dc46be7f471af3907dc10ee432b93929c6ea4cc",
-    "pkgFile": "app-bank0-0.12.2-18109787.hbfw",
-    "pkgSize": 513620,
-    "pkgSha256": "4a47c75ec99e83d441bfb1d363f40cbc34459e2fcb7710fa882566847a851a33"
+  "notes": "UI resource bundle refresh (online UI OTA test). Install it from Online upgrade -> UI resources.",
+  "app": null,
+  "ui": {
+    "uiBuildId": 26111217,
+    "wtocVersion": 1,
+    "rawSize": 9952912,
+    "sha256": "35069fc4da8f06392ea52597ac4074e7a2df8eeaa84dbc51695df85105faf932",
+    "pkgFile": "watch-ui-nor-26111217-35069fc4.hbfw",
+    "pkgSize": 1613172,
+    "pkgSha256": "3cecd0feac19aa35123d95b17c3afb83e420f7eda472a8c15bf6973151bbb74c"
   },
-  "ui": null,
   "policy": {
     "allowDowngrade": false,
     "minAppVersion": "0.8.22",
