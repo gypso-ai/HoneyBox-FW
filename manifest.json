@@ -1,18 +1,18 @@
 {
   "schema": 1,
   "channel": "stable",
-  "publishedAt": "2026-11-12T08:33:06Z",
-  "releaseSeq": 5,
-  "tag": "fw-v0.12.1",
-  "notes": "0.12.1: boot log and 'ui version' now print the firmware version together with the UI resource bundle identity ([ver] / ui-res lines).",
+  "publishedAt": "2026-11-12T09:05:29Z",
+  "releaseSeq": 6,
+  "tag": "fw-v0.12.2",
+  "notes": "0.12.2 (channel test bump): byte-identical firmware to 0.12.1 apart from the version string, published so a watch already on 0.12.1 can exercise the online upgrade path.",
   "app": {
-    "version": "0.12.1",
+    "version": "0.12.2",
     "imageId": "0x2793",
     "rawSize": 1001376,
-    "sha256": "392e49ad28bdba0baa44c0f5dfe1af7fabf248ea738dbe5891ad620eedd62a47",
-    "pkgFile": "app-bank0-0.12.1-392e49ad.hbfw",
-    "pkgSize": 513544,
-    "pkgSha256": "52910c42ebf053c2818684d0f714667c699a882c7d747c904dd61d493d8ae639"
+    "sha256": "18109787d954a758f11bed990dc46be7f471af3907dc10ee432b93929c6ea4cc",
+    "pkgFile": "app-bank0-0.12.2-18109787.hbfw",
+    "pkgSize": 513620,
+    "pkgSha256": "4a47c75ec99e83d441bfb1d363f40cbc34459e2fcb7710fa882566847a851a33"
   },
   "ui": null,
   "policy": {
