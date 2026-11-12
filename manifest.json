@@ -1,20 +1,20 @@
 {
   "schema": 1,
   "channel": "stable",
-  "publishedAt": "2026-11-11T11:36:33Z",
-  "releaseSeq": 4,
-  "tag": "fw-v0.12.0",
-  "notes": "Stable resource refresh: UI bundle 9.94 MB -> 1.54 MB (xz+HBFW). App image unchanged.",
-  "app": null,
-  "ui": {
-    "uiBuildId": 26111119,
-    "wtocVersion": 1,
-    "rawSize": 9956912,
-    "sha256": "9958d5802be5347cd9bf2ca47fa446e927a94fee40667fd51787dbbecbaceab2",
-    "pkgFile": "watch-ui-nor-26111119-9958d580.hbfw",
-    "pkgSize": 1617820,
-    "pkgSha256": "73fa5202b2c1f607b31d0e173eec6aff0992e6524d023216b02a1f4ae1eb1e8e"
+  "publishedAt": "2026-11-12T08:33:06Z",
+  "releaseSeq": 5,
+  "tag": "fw-v0.12.1",
+  "notes": "0.12.1: boot log and 'ui version' now print the firmware version together with the UI resource bundle identity ([ver] / ui-res lines).",
+  "app": {
+    "version": "0.12.1",
+    "imageId": "0x2793",
+    "rawSize": 1001376,
+    "sha256": "392e49ad28bdba0baa44c0f5dfe1af7fabf248ea738dbe5891ad620eedd62a47",
+    "pkgFile": "app-bank0-0.12.1-392e49ad.hbfw",
+    "pkgSize": 513544,
+    "pkgSha256": "52910c42ebf053c2818684d0f714667c699a882c7d747c904dd61d493d8ae639"
   },
+  "ui": null,
   "policy": {
     "allowDowngrade": false,
     "minAppVersion": "0.8.22",
