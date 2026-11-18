@@ -1,27 +1,27 @@
 {
   "schema": 1,
   "channel": "stable",
-  "publishedAt": "2026-11-18T06:46:52Z",
-  "releaseSeq": 9,
-  "tag": "fw-v0.17.0",
-  "notes": "0.17.0: two-stage sleep, laser glass watchface, phone dial via HFP, incoming/decline keys, USB voice bridge fixes.",
+  "publishedAt": "2026-11-18T12:11:16Z",
+  "releaseSeq": 10,
+  "tag": "fw-v0.18.0",
+  "notes": "0.18.0: real phone contacts + recent call log page (CMD 0x17 keys 0x03/0x04), 14px common-hanzi font for names, unpair spinner and fast unbind.",
   "app": {
-    "version": "0.17.0",
+    "version": "0.18.0",
     "imageId": "0x2793",
-    "rawSize": 1053300,
-    "sha256": "e4c665d478bbc17ba2d33715ae74705a008d87748e182b5413004a841712b422",
-    "pkgFile": "app-bank0-0.17.0-e4c665d4.hbfw",
-    "pkgSize": 535144,
-    "pkgSha256": "0d3f91b5f08667d4dad787e7c9037c45d389c6f4ca337222fa3060a8d060fb4a"
+    "rawSize": 1068980,
+    "sha256": "6ca18b3c4a72657fd72e8ce14564b67ed516a3ff47263887ef12a3cdeb788c64",
+    "pkgFile": "app-bank0-0.18.0-6ca18b3c.hbfw",
+    "pkgSize": 540660,
+    "pkgSha256": "54ea6b788f48a7c18233db353368556b7ac949e6b68d1b794ee917b2f098177c"
   },
   "ui": {
-    "uiBuildId": 26111814,
+    "uiBuildId": 26111820,
     "wtocVersion": 1,
-    "rawSize": 9395136,
-    "sha256": "eb26fa0d9a5163c5ebbd9e8e1ed6e9cd139cae0b1e4c8b87e944544ac4a7c3d3",
-    "pkgFile": "watch-ui-nor-26111814-eb26fa0d.hbfw",
-    "pkgSize": 1669424,
-    "pkgSha256": "b474fa42a50df671edec2af620249ec71c84ecae7c3e1e86d32c48e16cca99e5"
+    "rawSize": 9685952,
+    "sha256": "3e84524cc92b46ba0fadd32ac423391bca820c8a1fcb3a92cbfa9901c9c9b476",
+    "pkgFile": "watch-ui-nor-26111820-3e84524c.hbfw",
+    "pkgSize": 1909232,
+    "pkgSha256": "bc747bda5d150e951f28656470a9ac5f756c333ec9702948946b060aff235e17"
   },
   "policy": {
     "allowDowngrade": false,
