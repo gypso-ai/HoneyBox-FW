@@ -1,27 +1,27 @@
 {
   "schema": 1,
   "channel": "stable",
-  "publishedAt": "2026-11-19T03:02:10Z",
-  "releaseSeq": 12,
-  "tag": "fw-v0.18.1",
-  "notes": "0.18.1: wake screen on phone/voice commands, vibration for call/alarm/popup, clock app swipe area + text clip fix, phone key release on swipe, Rust panic logs and reboots.",
+  "publishedAt": "2026-11-19T06:01:03Z",
+  "releaseSeq": 13,
+  "tag": "fw-v0.19.0",
+  "notes": "correct watchface setting",
   "app": {
-    "version": "0.18.1",
+    "version": "0.19.0",
     "imageId": "0x2793",
-    "rawSize": 1070496,
-    "sha256": "3e39ccdda18a03b8ab5ad1f9a008cfae4f1efc14254db66569770ce99bc5a6c9",
-    "pkgFile": "app-bank0-0.18.1-3e39ccdd.hbfw",
-    "pkgSize": 541508,
-    "pkgSha256": "eb2961f6e3e175bf792b299936f84c9fb522793041486a4539edb74cf5e000da"
+    "rawSize": 1072064,
+    "sha256": "fe24e0980beef7237347f2861639bc5932759748508dd7c876137b1d4bd983d6",
+    "pkgFile": "app-bank0-0.19.0-fe24e098.hbfw",
+    "pkgSize": 542036,
+    "pkgSha256": "2fa131bafc259ff461b75e52e006a35350d9b3a1cbd04b96c9a50b74ff89638b"
   },
   "ui": {
-    "uiBuildId": 26111820,
+    "uiBuildId": 26111914,
     "wtocVersion": 1,
     "rawSize": 9685952,
-    "sha256": "3e84524cc92b46ba0fadd32ac423391bca820c8a1fcb3a92cbfa9901c9c9b476",
-    "pkgFile": "watch-ui-nor-26111820-3e84524c.hbfw",
-    "pkgSize": 1909232,
-    "pkgSha256": "a19350e17d4dc327715666113a932a7198d240f1edd06a3f4caa2d45c2f3d3a5"
+    "sha256": "acf3c2befd6fb12af61dc4a266cbda06a02a67e2fb9de1414a35e127b05bf63e",
+    "pkgFile": "watch-ui-nor-26111914-acf3c2be.hbfw",
+    "pkgSize": 1905788,
+    "pkgSha256": "c289285ab74b09bfecb988a5d6e13b1fccedd8fa385254deb2c6a7f4e388b6c7"
   },
   "policy": {
     "allowDowngrade": false,
