@@ -1,18 +1,18 @@
 {
   "schema": 1,
   "channel": "stable",
-  "publishedAt": "2026-11-18T12:11:16Z",
-  "releaseSeq": 10,
-  "tag": "fw-v0.18.0",
-  "notes": "0.18.0: real phone contacts + recent call log page (CMD 0x17 keys 0x03/0x04), 14px common-hanzi font for names, unpair spinner and fast unbind.",
+  "publishedAt": "2026-11-19T03:02:10Z",
+  "releaseSeq": 12,
+  "tag": "fw-v0.18.1",
+  "notes": "0.18.1: wake screen on phone/voice commands, vibration for call/alarm/popup, clock app swipe area + text clip fix, phone key release on swipe, Rust panic logs and reboots.",
   "app": {
-    "version": "0.18.0",
+    "version": "0.18.1",
     "imageId": "0x2793",
-    "rawSize": 1068980,
-    "sha256": "6ca18b3c4a72657fd72e8ce14564b67ed516a3ff47263887ef12a3cdeb788c64",
-    "pkgFile": "app-bank0-0.18.0-6ca18b3c.hbfw",
-    "pkgSize": 540660,
-    "pkgSha256": "54ea6b788f48a7c18233db353368556b7ac949e6b68d1b794ee917b2f098177c"
+    "rawSize": 1070496,
+    "sha256": "3e39ccdda18a03b8ab5ad1f9a008cfae4f1efc14254db66569770ce99bc5a6c9",
+    "pkgFile": "app-bank0-0.18.1-3e39ccdd.hbfw",
+    "pkgSize": 541508,
+    "pkgSha256": "eb2961f6e3e175bf792b299936f84c9fb522793041486a4539edb74cf5e000da"
   },
   "ui": {
     "uiBuildId": 26111820,
@@ -21,7 +21,7 @@
     "sha256": "3e84524cc92b46ba0fadd32ac423391bca820c8a1fcb3a92cbfa9901c9c9b476",
     "pkgFile": "watch-ui-nor-26111820-3e84524c.hbfw",
     "pkgSize": 1909232,
-    "pkgSha256": "bc747bda5d150e951f28656470a9ac5f756c333ec9702948946b060aff235e17"
+    "pkgSha256": "a19350e17d4dc327715666113a932a7198d240f1edd06a3f4caa2d45c2f3d3a5"
   },
   "policy": {
     "allowDowngrade": false,
