@@ -1,18 +1,18 @@
 {
   "schema": 1,
   "channel": "stable",
-  "publishedAt": "2026-11-23T08:43:10Z",
-  "releaseSeq": 16,
-  "tag": "fw-v0.20.7",
-  "notes": "## 0.20.7 (2026-11-23)\n\n### 变更\n\n- **单 MIC / 双 MIC 手表共用一个固件包**：板型由出厂烧录的音频配置决定（OTA\n  不会改动它），固件开机自动识别。双 MIC 板启用波束合成 + 强降噪，单 MIC 板\n  使用高音质降噪。两种手表都从同一个在线 OTA 包升级。\n\n### 修复\n\n- 0.20.6 在线包是单 MIC 构建，双 MIC 手表升级后没有波束合成、降噪偏弱；升级到\n  0.20.7 后自动恢复双 MIC 处理。",
+  "publishedAt": "2026-11-23T09:55:39Z",
+  "releaseSeq": 17,
+  "tag": "fw-v0.20.8",
+  "notes": "## 0.20.8 (2026-11-23)\n\n### 修复\n\n- **手机第一次调音量对喇叭无效、必须先用手表调一次**：手机（AVRCP CT）只有在\n  播放中收到一次真正改变的音量通知后，才会用 AVRCP 驱动手表扬声器音量。\n  现在每个连接在第一次开始播放时，手表自动把「记忆中的音量」（随设置持久化）\n  推给手机一次，等价于以前手动拖一次音量滑条；之后手机音量键立刻生效，\n  并且不会覆盖用户之后在手机上调的音量。\n- 音量请求不再因为落在同一级 15 级 DAC 台阶上被静默丢弃；A2DP 流开始时\n  重新写一次 track 音量（连接阶段手机下发的音量不保证已经生效）。\n- 补上 AVRCP `VOLUME_UP` / `VOLUME_DOWN`（0x3208 / 0x3209）事件处理。\n\n### 说明\n\n- 本次仅更新 App 镜像，UI 资源包（watch-ui-nor.bin）未变化。",
   "app": {
-    "version": "0.20.7",
+    "version": "0.20.8",
     "imageId": "0x2793",
-    "rawSize": 1082656,
-    "sha256": "15ff8871947c15aa3a44549e4b29e02f17583d31bb96921f3a81f324409fd8f0",
-    "pkgFile": "app-bank0-0.20.7-15ff8871.hbfw",
-    "pkgSize": 545532,
-    "pkgSha256": "efa893568d5ca4f8842683fba45b4315b20a8c8e3758c0a03b1f291854fec434"
+    "rawSize": 1082648,
+    "sha256": "45f4515cc54ac780a5de463bd3ef9deff589d4397de9a5bb27836046f5d378cb",
+    "pkgFile": "app-bank0-0.20.8-45f4515c.hbfw",
+    "pkgSize": 545400,
+    "pkgSha256": "a72266ff4018d2f99682da505aef6a1fe4ed628c31deeaf11979156495ccb677"
   },
   "ui": null,
   "policy": {
