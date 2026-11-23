@@ -1,28 +1,20 @@
 {
   "schema": 1,
   "channel": "stable",
-  "publishedAt": "2026-11-23T02:38:29Z",
-  "releaseSeq": 14,
-  "tag": "fw-v0.20.4",
-  "notes": "correct watchface jumping",
+  "publishedAt": "2026-11-23T07:10:52Z",
+  "releaseSeq": 15,
+  "tag": "fw-v0.20.6",
+  "notes": "## 0.20.6 (2026-11-23)\n\n### 修复\n\n- **双 MIC 手表点语音键重启**（DSP `exception msg_sub_type 0xFF, p_data 00000043`\n  → `chip reset, dsp_mailbox_process:1177`）：根因是 UI 提示音 MP3 轨与录音轨抢\n  DSP。提示音轨只在音频线程每 36 ms 轮询时才关闭，而录音轨已经先创建，2 MIC 录音\n  路径（2 路 ADC + beamforming + NREC）与仍存活的播放路径重叠约 90 ms 后 DSP 复位。\n  现在记录开始前会同步关闭提示音轨并等待其完全释放（≤150 ms）。\n  复现「暂停播放 → 点语音键 → 再点」连续 10 次：10/10 成功，0 次重启。\n\n### 变更\n\n- **录音数字增益 +6 dB → +3 dB**（模拟 24 dB 不变，总增益 +27 dB）：此前 10 次\n  录音中有 3 次打满量程（`peak=32768`）。",
   "app": {
-    "version": "0.20.4",
+    "version": "0.20.6",
     "imageId": "0x2793",
-    "rawSize": 1089316,
-    "sha256": "f55a660997cc0f6349f5c7e18dd1f488c5f72e43d1a0c65ebd2d1d66c760ba8e",
-    "pkgFile": "app-bank0-0.20.4-f55a6609.hbfw",
-    "pkgSize": 549448,
-    "pkgSha256": "5ed9efb89db8b7f45e3d7aa9a6282fec518681d842586353a02fb0d2dca9afc0"
+    "rawSize": 1081676,
+    "sha256": "31ad4828746940ebf01c64a73a5905bea69cabf8119c203a2c320a1efa8bde9d",
+    "pkgFile": "app-bank0-0.20.6-31ad4828.hbfw",
+    "pkgSize": 545220,
+    "pkgSha256": "89f38473da9faf6296791e81f5e9922721142ba3a86322e28e50fa8065b95a46"
   },
-  "ui": {
-    "uiBuildId": 26112310,
-    "wtocVersion": 1,
-    "rawSize": 9726480,
-    "sha256": "28bcf39b8f65e9bdaa60b0193d3cfa826d6ec7d0950590b773614eb1d062fe5e",
-    "pkgFile": "watch-ui-nor-26112310-28bcf39b.hbfw",
-    "pkgSize": 1907248,
-    "pkgSha256": "0b1854d925c2f93b92d4cbe2b5ad0b98a9e640d03a4b6abf15c44f2bf0cc40b4"
-  },
+  "ui": null,
   "policy": {
     "allowDowngrade": false,
     "minAppVersion": "0.8.22",
