@@ -1,18 +1,18 @@
 {
   "schema": 1,
   "channel": "stable",
-  "publishedAt": "2026-11-23T09:55:39Z",
-  "releaseSeq": 17,
-  "tag": "fw-v0.20.8",
-  "notes": "## 0.20.8 (2026-11-23)\n\n### 修复\n\n- **手机第一次调音量对喇叭无效、必须先用手表调一次**：手机（AVRCP CT）只有在\n  播放中收到一次真正改变的音量通知后，才会用 AVRCP 驱动手表扬声器音量。\n  现在每个连接在第一次开始播放时，手表自动把「记忆中的音量」（随设置持久化）\n  推给手机一次，等价于以前手动拖一次音量滑条；之后手机音量键立刻生效，\n  并且不会覆盖用户之后在手机上调的音量。\n- 音量请求不再因为落在同一级 15 级 DAC 台阶上被静默丢弃；A2DP 流开始时\n  重新写一次 track 音量（连接阶段手机下发的音量不保证已经生效）。\n- 补上 AVRCP `VOLUME_UP` / `VOLUME_DOWN`（0x3208 / 0x3209）事件处理。\n\n### 说明\n\n- 本次仅更新 App 镜像，UI 资源包（watch-ui-nor.bin）未变化。",
+  "publishedAt": "2026-11-24T08:42:22Z",
+  "releaseSeq": 18,
+  "tag": "fw-v0.21.1",
+  "notes": "0.21.1: one-shot alarms (tomorrow 7am, arg1 bit7 + validator fix), hour-range alarm off/on/delete, tomorrow/yesterday date query, alarm mutations open the alarm page, voice workout keeps the full 3-2-1 pickup",
   "app": {
-    "version": "0.20.8",
+    "version": "0.21.1",
     "imageId": "0x2793",
-    "rawSize": 1082648,
-    "sha256": "45f4515cc54ac780a5de463bd3ef9deff589d4397de9a5bb27836046f5d378cb",
-    "pkgFile": "app-bank0-0.20.8-45f4515c.hbfw",
-    "pkgSize": 545400,
-    "pkgSha256": "a72266ff4018d2f99682da505aef6a1fe4ed628c31deeaf11979156495ccb677"
+    "rawSize": 1088032,
+    "sha256": "1c6fc719d2bb968b9918b819ebf3e5858500fe6997f9ce26b700deb5faae8dab",
+    "pkgFile": "app-bank0-0.21.1-1c6fc719.hbfw",
+    "pkgSize": 548016,
+    "pkgSha256": "1af6faf0ae5fb4d3debd71c460ade7e133ec569fea7b59637c08a9fa6bbadea7"
   },
   "ui": null,
   "policy": {
